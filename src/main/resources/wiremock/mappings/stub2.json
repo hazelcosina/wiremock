@@ -1,0 +1,11 @@
+{
+  "id": "32b42df3-4281-37e3-a235-959a75e00997",
+  "request": {
+    "url": "/two",
+    "method": "GET"
+  },
+  "response": {
+    "status": 200,
+    "body": "Hello World 2"
+  }
+}
