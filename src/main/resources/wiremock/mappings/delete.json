@@ -1,0 +1,15 @@
+{
+  "id": "32b42df3-4281-37e3-a235-959a75e00997",
+  "request": {
+    "urlPathPattern": "/user/([1-9])",
+    "method": "DELETE"
+
+  },
+  "response": {
+    "status": 200,
+    "body": "OK",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

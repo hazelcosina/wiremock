@@ -1,0 +1,28 @@
+{
+  "id": "32b42df3-4281-37e3-a235-959a75e00997",
+  "request": {
+    "url": "/user/save",
+    "method": "POST",
+    "bodyPatterns": [
+      {
+        "matchesJsonPath": "$.firstName"
+      },
+      {
+        "matchesJsonPath": "$.lastName"
+      },
+      {
+        "matchesJsonPath": "$.age"
+      },
+      {
+        "matchesJsonPath": "$.id"
+      }
+    ]
+  },
+  "response": {
+    "status": 201,
+    "body": "Created",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
