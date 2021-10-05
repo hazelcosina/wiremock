@@ -1,0 +1,17 @@
+{
+  "id": "32b42df3-4281-37e3-a235-959a75e00997",
+  "request": {
+    "url": "/user/update",
+    "method": "PUT",
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.id =~ /[^0-9]*/)]"
+    } ]
+  },
+  "response": {
+    "status": 400,
+    "body": "ID should be an integer",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

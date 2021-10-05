@@ -5,15 +5,9 @@
     "method": "POST",
     "bodyPatterns": [
       {
-        "matchesJsonPath": "$.firstName"
-      },
-      {
-        "matchesJsonPath": "$.lastName"
-      },
-      {
-        "matchesJsonPath": "$.age"
-      },
-      {
+        "matchesJsonPath": "$.firstName",
+        "matchesJsonPath": "$.lastName",
+        "matchesJsonPath": "$.age",
         "matchesJsonPath": "$.id"
       }
     ]

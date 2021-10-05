@@ -1,0 +1,20 @@
+{
+  "id": "32b42df3-4281-37e3-a235-959a75e00997",
+  "request": {
+    "url": "/user/update",
+    "method": "PUT",
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.id =~ /^[0-9]*/)]",
+      "matchesJsonPath" : "$[?(@.firstName =~ /[a-zA-Z]*/)]",
+      "matchesJsonPath" : "$[?(@.lastName =~ /[a-zA-Z]*/)]",
+      "matchesJsonPath" : "$[?(@.age =~ /[0-9]*/)]"
+    } ]
+  },
+  "response": {
+    "status": 200,
+    "body": "Updated Successfully",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
