@@ -1,11 +1,15 @@
 {
   "id": "32b42df3-4281-37e3-a235-959a75e00997",
   "request": {
-    "url": "/two",
+    "url": "/user/1",
     "method": "GET"
+
   },
   "response": {
     "status": 200,
-    "body": "Hello World 2"
+    "bodyFileName": "userById.json",
+      "headers": {
+          "Content-Type": "application/json"
+        }
   }
 }

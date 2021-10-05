@@ -1,6 +1,7 @@
 package com.example.wiremock.config;
 
 import com.github.tomakehurst.wiremock.WireMockServer;
+import com.github.tomakehurst.wiremock.extension.responsetemplating.ResponseTemplateTransformer;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,6 +24,8 @@ public class WiremockConfiguration {
         WireMockServer wireMockServer = new WireMockServer(options()
                 .port(port)
                 .usingFilesUnderDirectory(path)
+                .extensions(new ResponseTemplateTransformer(true))
+
         );
         wireMockServer.start();
         configureFor(host, port);

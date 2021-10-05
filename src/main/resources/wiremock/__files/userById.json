@@ -1,0 +1,5 @@
+{
+  "id": "{{request.path.[1]}}",
+  "firstName": "Juan",
+  "lastName": "Cruz"
+}
